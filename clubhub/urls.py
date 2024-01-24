@@ -21,6 +21,7 @@ from django.urls import path,include
 from django.urls import path
 
 urlpatterns = [
+    path('', include('Authentication.urls')),
     path('', include('ClubNexus.urls')),
     path('admin/', admin.site.urls),
 ]
