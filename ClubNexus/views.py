@@ -3,6 +3,6 @@ from django.http import HttpResponseRedirect
 # Create your views here.
 
 
-def index(request):
-    return render(request,"ClubNexus\index.html")
+def event(request):
+    return render(request,"ClubNexus\event.html")
 
