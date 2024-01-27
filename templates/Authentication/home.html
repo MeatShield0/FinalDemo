@@ -8,13 +8,13 @@
     
     <meta charset="UTF-8">
     <title>Welcome to GeeksforGeeks LPU Chapter</title>
-    <link rel="stylesheet" href="{% static 'style\style.css' %}">
+    <link rel="stylesheet" href="{% static 'style/style.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@300&family=Poppins:wght@200;400;500&family=Roboto&family=Roboto+Condensed&family=Rubik&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href=" % static https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css %" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css' %}" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
 
 </head>
 <body>
@@ -45,10 +45,10 @@
             </div>
             <nav>
                 <ul>
-                    
+                    <li><a href="/home">Home</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="/aboutus">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="/contactus">Contact</a></li>
                     <li><a href="events.html">Events</a></li>
                     <li><a href="join.html">Join</a></li>
                 </ul>
@@ -57,7 +57,7 @@
 <!--------------------------------Home-------------------------------------------->
 <div class="row">
     <div class="col-2-txt">
-        <h1>Hola Geeks!<h1>
+        <h1>Hola Geeks!</h1>
         <p class="context">Welcome to GeeksforGeeks LPU Student Chapter. We are exceedingly glad to have you here. Geeks for Geeks is a portal for computer geeks where you get a bunch of articles, quizzes on programming, and algorithms to practice upon. Cool isn’t it? </p>
     </div>
     <div class="col-2-img">
@@ -112,7 +112,7 @@
     
 
     <button type="submit"><a href="/signout">SignOut</a></button>
-
+ 
     <!-- ------------------------------------------------------------------------ -->
 
    

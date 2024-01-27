@@ -6,14 +6,14 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background: #edddee;
+    background: #131417;
     position: relative;
 }
 .navbar{
     display: flex;
     padding: 20px 50px;
     align-items: center;
-    background: #620342;
+    background: #2A2A2C;
 }
 nav{
     flex: 1;
@@ -33,7 +33,7 @@ nav ul{
 }
 nav ul li{
     display: inline-block;
-    border: 1px solid #e699cc;
+    border: 1px solid #308D46;
     padding: 7px 22px;
     margin: 10px 15px;
     box-shadow: 4px 4px 5.5px #131417;
@@ -51,8 +51,8 @@ nav ul li:hover a{
     color: #ffffff;
 }
 nav ul li:hover{
-    background: #edddee;
-    border: 1px solid #620342;
+    background: #308D46;
+    border: 1px solid #308D46;
     transform: translate(-6px,-6px);
 }
 .row{
@@ -121,7 +121,7 @@ p{
 .col-2-txt h1{
     font-family: 'Poppins',sans-serif;
     font-size: 40px;
-    color: #4d0438;
+    color: #ffffff;
     text-align: center;
 }
 .col-2-txt{
@@ -148,7 +148,7 @@ p{
 .col-3-txt h1{
     font-family: 'Poppins',sans-serif;
     font-size: 40px;
-    color: #4d0438;
+    color: #ffffff;
     text-align: center;
 }
 .col-3-txt p{

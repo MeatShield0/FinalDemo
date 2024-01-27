@@ -57,8 +57,8 @@ def signup(request):
         message = "Hello " + myuser.first_name + "!! \n" + "Welcome to GFG!! \nThank you for visiting our website\n. We have also sent you a confirmation email, please confirm your email address. \n\nThanking You\nAnubhav Madhav"        
         from_email = settings.EMAIL_HOST_USER
         to_list = [myuser.email]
-        send_mail(subject, message, from_email, to_list, fail_silently=True)
-        
+        # send_mail(subject, message, from_email, to_list, fail_silently=True)
+        print(message)
         # Email Address Confirmation Email
         current_site = get_current_site(request)
         email_subject = "Confirm your Email @ clubhub - Django Login!!"
@@ -69,14 +69,14 @@ def signup(request):
             'uid': urlsafe_base64_encode(force_bytes(myuser.pk)),
             'token': generate_token.make_token(myuser)
         })
-        email = EmailMessage(
-        email_subject,
-        message2,
-        settings.EMAIL_HOST_USER,
-        [myuser.email],
-        )
-        email.fail_silently = True
-        email.send()
+        # email = EmailMessage(
+        # email_subject,
+        print(message2)
+        # settings.EMAIL_HOST_USER,
+        # [myuser.email],
+        # )
+        # email.fail_silently = True
+        # email.send()
         
         return redirect('signin')
         
@@ -130,4 +130,10 @@ def signout(request):
 def aboutus(request):
   
   return render(request,"Authentication/aboutus.html") 
+
+
+
+def contactus(request):
+  
+  return render(request,"Authentication/contactus.html") 
 
