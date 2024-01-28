@@ -33,7 +33,7 @@ nav ul{
 }
 nav ul li{
     display: inline-block;
-    border: 1px solid #8d303c;
+    border: 1px solid #0cda20;
     padding: 7px 22px;
     margin: 10px 15px;
     box-shadow: 4px 4px 5.5px #131417;
@@ -230,3 +230,47 @@ h1 {
 }
 
 
+.logged-out {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Set the height to 100% of the viewport height for vertical centering */
+}
+
+.button-container {
+    border: 2px solid #4CAF50; /* Green border for the box */
+    padding: 80px;
+    border-radius: 10px;
+    transition: border-color 0.3s;
+}
+
+.button-container:hover {
+    border-color: #45a049; /* Darker green on hover */
+}
+
+.logged-out button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.logged-out button a {
+    color: white;
+    text-decoration: none;
+}
+
+.logged-out button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Scale the button on hover for a subtle effect */
+}
