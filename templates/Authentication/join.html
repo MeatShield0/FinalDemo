@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,14 +6,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="joinstyle.css">
-    <title>GFGLPU | Join </title>
+    <link rel="stylesheet" href="{% static 'style/joinstyle.css' %}">
+    <title>CLUBHUB | Join </title>
 </head>
 
 <body>
     <div class="container">
         <div class="title">
-            <h1> Signin</h1>
+            <h1> JOIN</h1>
         </div>
         <form action="#">
             <div class="user-details">
@@ -45,11 +46,11 @@
                     <input type="text" placeholder="Enter your Field of Expertise" required>
                 </div>
                 <div class="input-box">
-                    <span class="details">Why you want to Join Community ?</span>
+                    <span class="details">Why you want to Join Club ?</span>
                     <input type="text" placeholder="Your Response" required>
                 </div>
                 <div class="input-box">
-                    <span class="details">how much experience do you have as a working in community</span>
+                    <span class="details">how much experience do you have in this particular area ?</span>
                     <input type="email" placeholder="experience" required>
                 </div>
             </div>
@@ -58,10 +59,10 @@
                 <input type="radio" name="department" id="w2">
                 <input type="radio" name="department" id="w3">
                 <input type="radio" name="department" id="w4">
-                <input type="radio" name="department" id="w5">
+                
                 <input type="radio" name="department" id="w6">
                 <input type="radio" name="department" id="w7">
-                <input type="radio" name="department" id="w8">
+                
                 <input type="radio" name="department" id="w9">
                 <span class="work-title">In which Department you want to Work </span>
                 <div class="category">
@@ -81,10 +82,7 @@
                         <span class="dot four"></span>
                         <span class="department">Graphic Designing and Video Editing</span>
                     </label>
-                    <label for="w5">
-                        <span class="dot five"></span>
-                        <span class="department">Marketing and Sponsorship</span>
-                    </label>
+                    
                     <label for="w6">
                         <span class="dot six"></span>
                         <span class="department">Human Resources Management</span>
@@ -93,10 +91,7 @@
                         <span class="dot seven"></span>
                         <span class="department">Public Relations Management</span>
                     </label>
-                    <label for="w8">
-                        <span class="dot eight"></span>
-                        <span class="department">Web Development</span>
-                    </label>
+                    
                     <label for="w9">
                         <span class="dot nine"></span>
                         <span class="department">DSA speakers and Coordinators</span>

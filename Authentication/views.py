@@ -137,3 +137,9 @@ def contactus(request):
   
   return render(request,"Authentication/contactus.html") 
 
+
+
+def join(request):
+  
+  return render(request,"Authentication/join.html") 
+

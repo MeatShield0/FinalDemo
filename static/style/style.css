@@ -33,7 +33,7 @@ nav ul{
 }
 nav ul li{
     display: inline-block;
-    border: 1px solid #308D46;
+    border: 1px solid #8d303c;
     padding: 7px 22px;
     margin: 10px 15px;
     box-shadow: 4px 4px 5.5px #131417;
@@ -115,13 +115,13 @@ p{
     padding-left: 50px;
 }
 .col-2-img{
-    width: 50%;
+    width: 40%;
     padding-left: 70px;
 }
 .col-2-txt h1{
     font-family: 'Poppins',sans-serif;
     font-size: 40px;
-    color: #ffffff;
+    color: #2ff56e;
     text-align: center;
 }
 .col-2-txt{
@@ -130,7 +130,7 @@ p{
 .col-2-txt p{
     font-family: 'Poppins',sans-serif;
     font-size: 20px;
-    color:#308D46;
+    color:#deeee2;
     text-align: justify;
     font-weight: 500;
 }
@@ -148,14 +148,14 @@ p{
 .col-3-txt h1{
     font-family: 'Poppins',sans-serif;
     font-size: 40px;
-    color: #ffffff;
+    color:#2ff56e;
     text-align: center;
 }
 .col-3-txt p{
     font-family: 'Poppins',sans-serif;
     font-size: 20px;
     font-weight: 500;
-    color:#308D46;
+    color:#deeee2;
     text-align: justify;
 }
 .txt{
@@ -208,3 +208,25 @@ p{
     height: 3vh;
     background: #131417;
 }
+
+
+.hero {
+    
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Make the hero section take the full height of the viewport */
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+

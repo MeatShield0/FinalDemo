@@ -12,4 +12,6 @@ urlpatterns = [
     path('', include('Authentication.urls')),
     
     path('', include('ClubNexus.urls')),
+
+    
 ]

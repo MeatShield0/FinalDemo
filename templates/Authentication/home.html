@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <meta charset="UTF-8">
+    
     <title>Welcome to GeeksforGeeks LPU Chapter</title>
+    
     <link rel="stylesheet" href="{% static 'style/style.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,6 +20,16 @@
 
 </head>
 <body>
+    <!-- ------------------------------------------------------------ -->
+   
+   
+    
+
+
+
+<!-- ---------------------------------------------- -->
+
+
 
     {% for message in messages %}
     <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
@@ -28,7 +40,7 @@
     </div>
     {% endfor %}
 
-    <h3>Welcome to GeeksForGeeks!</h3>
+    
 
 
     {% if user.is_authenticated %}
@@ -50,37 +62,48 @@
                     <li><a href="/aboutus">About</a></li>
                     <li><a href="/contactus">Contact</a></li>
                     <li><a href="/event">Events</a></li>
-                    <li><a href="join.html">Join</a></li>
+                    <li><a href="/join">Join</a></li>
                 </ul>
             </nav>
         </div> 
 <!--------------------------------Home-------------------------------------------->
 <div class="row">
     <div class="col-2-txt">
-        <h1>Hola Geeks!</h1>
-        <p class="context">Welcome to GeeksforGeeks LPU Student Chapter. We are exceedingly glad to have you here. Geeks for Geeks is a portal for computer geeks where you get a bunch of articles, quizzes on programming, and algorithms to practice upon. Cool isn’t it? </p>
+
+        <header class="hero">
+           
+            <h1>Welcome to Our Club</h1>
+            <p>Join us for exciting events and activities!</p>
+        </header>
+
+
+        <br>
+        <br>
+        
+
+        <h1>~ElevateElite Athletics~</h1>
+        <p class="context">Welcome to ElevateElite Athletics Club, your home for sports excellence! Established in 1989, we're a vibrant community dedicated to fostering athletic achievement and camaraderie. With a rich history and state-of-the-art facilities, we offer a diverse range of sports, including [List of Sports. Join us to experience the thrill of competition, teamwork, and the joy of being part of a winning legacy. Unleash your potential with ElevateElite Athletics Club, where champions are made! </p>
     </div>
     <div class="col-2-img">
-        <img src="2.jpg" width="600px" id="pic">
+        <img src="{% static 'image/sports club img.png' %}" width="300px" id="pic">
     </div>
 </div>
 <div class="row">
     <div class="col-3-img">
-        <img src="1.jpg" width="600px" id="pic">
+        <img src="{% static 'image/music club.png' %}" width="400px" id="pic">
     </div>
     <div class="col-3-txt">
-        <h1>Who Are We?<h1>
-        <p class="context">GeeksforGeeks LPU chapter under the aegis of Division of Welfare is a platform for students which provides the facility to sharpen up their coding skills and beat others up in the race of coding. We are doing something different than others at geeks for geeks and to make sure that this happens, we with our entire team around the clock organize events that help students enrich their coding abilities. We as a community of geeks wish to make their codes be the reason for the change they want to see in today's world.</p>
+        <h1>~HARMONY HUB ~<h1>
+        <p class="context">Welcome to HarmonyHub Collective, where music enthusiasts unite! Established to celebrate diverse melodies, we're a vibrant community fostering creativity and musical passion. Join us for a symphony of shared experiences, events, and the joy of making music together. Elevate your musical journey with HarmonyHub where every note resonates.</p>
     </div>
 </div>
 <div class="row">
     <div class="col-2-txt">
-        <h1>GeeksforGeeks Events<h1>
-        <p class="context">Wanna know our past events? 
-            Our Recent Event Geeks was "<b>Quiz of Republics</b>". "<b>Coding Rumble 2022</b>" is a Coding Competition for geeks to relieve their exam stress. "<b>I am Remarkable</b>" is an amazing workshop that is a Google initiative to empower women. Just hold on geek, we have so many events just like this waiting for you, so hop on to Instagram and check all of our other wonderful events. <b><i>Join us on this embarking journey where you get to explore and light your hidden coding abilities.</i></b></p>
+        <h1>~BeatVibe ~<h1>
+        <p class="context">Welcome to BeatVibe Club, where rhythm and passion collide! Immerse yourself in the dance experience with us. Our vibrant community celebrates diverse dance styles, fostering creativity and connection. Join the BeatVibe family for energetic events, thrilling performances, and the joy of moving to the beat. Let's dance together!</i></b></p>
     </div>
     <div class="col-2-img">
-        <img src="4.jpg" width="600px" id="pic">
+        <img src="{% static 'image/DANCE CLUB.png' %}" width="600px" id="pic">
     </div>
 </div>
 
@@ -124,11 +147,13 @@
 
     {% else %}
 
+    <div class="logged-out">
+
     <button type="submit"><a href="/signup">SignUp</a></button>
     <br/>
     <button type="submit"><a href="/signin">SignIn</a></button>
     <br/> 
-
+    </div>
     {% endif %}
     <!-- =============================================================================================================================-->
      
