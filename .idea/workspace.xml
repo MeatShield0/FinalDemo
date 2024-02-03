@@ -6,6 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="f19a749e-8f26-4af8-aa6d-34a76139b1a9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClubNexus/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ClubNexus/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClubNexus/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ClubNexus/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClubNexus/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ClubNexus/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clubhub/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/clubhub/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clubhub/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/clubhub/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,22 +46,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/classes/TRIMESTER 2/Full Stack  Web Development/CAC2/django_CAC_2",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/classes/TRIMESTER 2/Full Stack  Web Development/CAC2/django_CAC_2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="django_CAC_2" type="Python.DjangoServer" factoryName="Django server">
       <module name="django_CAC_2" />
@@ -99,11 +104,25 @@
       <option name="presentableId" value="Default" />
       <updated>1704341509056</updated>
       <workItem from="1704341510152" duration="705000" />
-      <workItem from="1706516218850" duration="1350000" />
+      <workItem from="1706516218850" duration="5598000" />
+      <workItem from="1706635750059" duration="841000" />
+      <workItem from="1706636616323" duration="826000" />
+      <workItem from="1706725972525" duration="7550000" />
+      <workItem from="1706931139785" duration="525000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/clubhub/urls.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

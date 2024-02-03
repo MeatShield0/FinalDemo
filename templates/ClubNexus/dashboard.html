@@ -1,0 +1,15 @@
+<!-- dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Member Dashboard</title>
+</head>
+<body>
+    <h1>Welcome, {{ member_info.name }}!</h1>
+    <p>Email: {{ member_info.email }}</p>
+    <p>Membership Status: {% if member_info.membership_status %}Active{% else %}Inactive{% endif %}</p>
+    <!-- Add more personalized information as needed -->
+</body>
+</html>
