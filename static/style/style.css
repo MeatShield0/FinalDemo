@@ -3,10 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* body {
+    background-color: #1b1a1a; /* replace with your desired color */
+
+
+body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(to right, #fff, #ddd);
+    }
 .header{
     min-height: 100vh;
     width: 100%;
-    background: #131417;
+    background: #191c24;
     position: relative;
 }
 .navbar{
@@ -54,6 +63,7 @@ nav ul li:hover{
     background: #308D46;
     border: 1px solid #308D46;
     transform: translate(-6px,-6px);
+
 }
 .row{
     display: flex;
@@ -62,18 +72,19 @@ nav ul li:hover{
     justify-content: space-around;
 }
 h3{
-    color: white;
-    font-size: 18px;
-    text-align: left;
+    color: rgb(0, 0, 0);
+    background: #d8d9de;
+    font-size: 25px;
+    text-align: center;
     font-family: 'Poppins', sans-serif;
-    margin-top: 20px;
+    margin-top: none;
     font-weight: 500;
 }
 p{
     text-decoration: none;
     font-size: 16px;
     text-align: left;
-    font-weight: bold;
+    font-weight: bold;;
     color: #308D46;
     font-family: 'Inter', sans-serif;
     padding-top: 5px;
@@ -182,7 +193,7 @@ p{
     font-size: 15px;
 }
 .insta{
-    color: rgb(219, 30, 219);
+    color:linear-gradient(45deg, #FFD700, #FFA07A);
     padding-right: 52px;
 }
 .fb{
@@ -230,47 +241,63 @@ h1 {
 }
 
 
+
+
 .logged-out {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Set the height to 100% of the viewport height for vertical centering */
+    height: 100vh;
+    background: whitesmoke; /* Gradient background for the entire page */
 }
 
 .button-container {
-    border: 2px solid #4CAF50; /* Green border for the box */
-    padding: 80px;
+    border: 2px solid #fff;
+    background:whitesmoke; /* Gradient background for the container */
+    padding: 40px;
     border-radius: 10px;
-    transition: border-color 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 .button-container:hover {
-    border-color: #45a049; /* Darker green on hover */
+    border-color: #dee1e4;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.logged-out h2 {
+    font-size: 2em;
+    color: white; /* Text color changed to white */
+}
+
+.logged-out p {
+    color: #666;
+    margin-bottom: 20px;
 }
 
 .logged-out button {
-    background-color: #4CAF50; /* Green */
+    background: white; /* Gradient background for the button */
     border: none;
-    color: white;
-    padding: 10px 20px;
+    color: white; /* Text color changed to white */
+    padding: 12px 24px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    font-size: 18px;
+    margin: 10px 0;
     cursor: pointer;
     border-radius: 5px;
-    transition: background-color 0.3s, transform 0.2s;
+    transition: background 0.3s, transform 0.2s;
 }
 
 .logged-out button a {
-    color: white;
+    color: white; /* Text color changed to white */
     text-decoration: none;
 }
 
 .logged-out button:hover {
-    background-color: #45a049; /* Darker green on hover */
-    transform: scale(1.05); /* Scale the button on hover for a subtle effect */
+    background: white; /* Lighter shade on hover */
+    transform: scale(1.05);
 }
