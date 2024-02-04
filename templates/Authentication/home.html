@@ -8,7 +8,7 @@
     
     <meta charset="UTF-8">
     
-    <title>Welcome to GeeksforGeeks LPU Chapter</title>
+    <title>CLUBNEXUS</title>
     
     <link rel="stylesheet" href="{% static 'style/style.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,12 +44,7 @@
 
 
     {% if user.is_authenticated %}
-
-    <h3>Hello {{fname}}!</h3>
-    <h4>You're successfully logged in.</h4>
-    
-
-    <section class="header">
+<section class="header">
         <div class="container">
         <div class="navbar">
             <div class="logo">
@@ -63,6 +58,7 @@
                     <li><a href="/contactus">Contact</a></li>
                     <li><a href="/event">Events</a></li>
                     <li><a href="/join">Join</a></li>
+                    <li><a href="/signout">SignOut</a></li>
                 </ul>
             </nav>
         </div> 
@@ -75,19 +71,18 @@
             <h1>Welcome to Our Club</h1>
             <p>Join us for exciting events and activities!</p>
         </header>
-
-
-        <br>
-        <br>
-        
-
-        <h1>~ElevateElite Athletics~</h1>
-        <p class="context">Welcome to ElevateElite Athletics Club, your home for sports excellence! Established in 1989, we're a vibrant community dedicated to fostering athletic achievement and camaraderie. With a rich history and state-of-the-art facilities, we offer a diverse range of sports, including [List of Sports. Join us to experience the thrill of competition, teamwork, and the joy of being part of a winning legacy. Unleash your potential with ElevateElite Athletics Club, where champions are made! </p>
     </div>
-    <div class="col-2-img">
-        <img src="{% static 'image/sports club img.png' %}" width="300px" id="pic">
+
+    <div class="row">
+        <div class="col-2-txt">
+            <h1>~BeatVibe ~<h1>
+            <p class="context">Welcome to BeatVibe Club, where rhythm and passion collide! Immerse yourself in the dance experience with us. Our vibrant community celebrates diverse dance styles, fostering creativity and connection. Join the BeatVibe family for energetic events, thrilling performances, and the joy of moving to the beat. Let's dance together!</i></b></p>
+        </div>
+        <div class="col-2-img">
+            <img src="{% static 'image/DANCE CLUB.png' %}" width="600px" id="pic">
+        </div>
     </div>
-</div>
+
 <div class="row">
     <div class="col-3-img">
         <img src="{% static 'image/music club.png' %}" width="400px" id="pic">
@@ -130,7 +125,6 @@
     </div>
     <div class="grey-bar"></div>
 
-    <button type="submit"><a href="/signout">SignOut</a></button>
  
     <!-- ------------------------------------------------------------------------ -->
 

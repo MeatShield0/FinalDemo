@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #cbcdcd,#92c09d;
+    background-color: #141414;
 }
 .header{
     min-height: 100vh;
@@ -17,7 +17,7 @@ body{
     display: flex;
     padding: 20px 50px;
     align-items: center;
-    background: #2A2A2C;
+    background: #000000;
 }
 nav{
     flex: 1;
@@ -180,6 +180,7 @@ p{
 .footer{
     background-color: #ffffff;
     margin-top: 100px;
+    width: 100%;
 }
 
 .rights{
