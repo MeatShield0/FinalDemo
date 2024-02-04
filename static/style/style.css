@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    background-color: #cbcdcd,#92c09d;
+}
 .header{
     min-height: 100vh;
     width: 100%;
@@ -68,6 +72,15 @@ h3{
     font-family: 'Poppins', sans-serif;
     margin-top: 20px;
     font-weight: 500;
+}
+
+h4{
+    color:#ffffff;
+    font-size: 25px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+    font-weight: 1000;
 }
 p{
     text-decoration: none;
@@ -240,29 +253,42 @@ h1 {
 }
 
 .button-container {
-    border: 2px solid #4CAF50; /* Green border for the box */
-    padding: 80px;
+    border: 2px solid #fff;
+    background: linear-gradient(45deg, #060707, #1d1f1f,#308d46); /* Gradient background for the container */
+    padding: 40px;
     border-radius: 10px;
-    transition: border-color 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 .button-container:hover {
-    border-color: #45a049; /* Darker green on hover */
+    border-color:#308d46;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.logged-out h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+.logged-out p {
+    color: #666;
+    margin-bottom: 20px;
 }
 
 .logged-out button {
-    background-color: #4CAF50; /* Green */
+    background: linear-gradient(45deg, #060707, #353434, #060707); /* Gradient background for the button */
     border: none;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 24px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    font-size: 18px;
+    margin: 10px 0;
     cursor: pointer;
     border-radius: 5px;
-    transition: background-color 0.3s, transform 0.2s;
+    transition: background 0.3s, transform 0.2s;
 }
 
 .logged-out button a {
@@ -271,6 +297,6 @@ h1 {
 }
 
 .logged-out button:hover {
-    background-color: #45a049; /* Darker green on hover */
-    transform: scale(1.05); /* Scale the button on hover for a subtle effect */
+    background: linear-gradient(45deg,  #1d1f1f,#308d46); /* Lighter shade on hover */
+    transform: scale(1.05);
 }
