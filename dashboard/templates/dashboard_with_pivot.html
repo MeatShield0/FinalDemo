@@ -33,7 +33,7 @@
 }</style>
 </head>
 <body>
-<div id="pivot-table-container" data-url="{% url 'pivot_data' %}"></div>
+<div id="pivot-table-container" data-url="{% url 'pivot_data1' %}"></div>
 <div id="pivot-chart-container"></div>
 <script>
 function processData(dataset) {
@@ -57,22 +57,38 @@ $.ajax({
                     type: "json",
                     data: processData(data),
                     mapping: {
-                        "product_category": {
-                            "caption": "Product Category"
+                        "name": {
+                            "caption": "name"
                         },
-                        "payment_method": {
-                            "caption": "Payment Method"
+                        "description": {
+                            "caption": "description"
                         },
-                        "shipping_cost": {
-                            "caption": "Shipping Cost",
-                            "type": "number"
-                        },
-                        "unit_price": {
-                            "caption": "Unit Price",
-                            "type": "number"
-                        }
+
                     }
                 },
+                "slice": {
+                    "rows": [{
+                        "uniqueName": "name"
+                    }],
+                    "columns": [{
+                            "uniqueName": "description"
+                        },
+                        {
+                            "uniqueName": "[]"
+                        }
+                    ],
+                    "measures": [{
+                            "uniqueName": "shipping_cost",
+                            "aggregation": "sum"
+                        },
+                        {
+                            "uniqueName": "unit_price",
+                            "aggregation": "sum"
+                        }
+                    ]
+                }
+            }
+        });
                 "slice": {
                     "rows": [{
                         "uniqueName": "product_category"
@@ -95,7 +111,7 @@ $.ajax({
                     ]
                 }
             }
-        });
+        {#});#}
         new Flexmonster({
             container: "#pivot-chart-container",
             componentFolder: "https://cdn.flexmonster.com/",
@@ -107,34 +123,30 @@ $.ajax({
                     type: "json",
                     data: processData(data),
                     mapping: {
-                        "product_category": {
-                            "caption": "Product Category"
+                        "user": {
+                            "caption": "user"
                         },
-                        "payment_method": {
-                            "caption": "Payment Method"
+                        "bio": {
+                            "caption": "bio"
                         },
-                        "shipping_cost": {
-                            "caption": "Shipping Cost",
-                            "type": "number"
+                        "": {
+                            "caption": "profile_picture",
+                            "type": "image"
                         },
-                        "unit_price": {
-                            "caption": "Unit Price",
-                            "type": "number"
-                        }
+
                     }
                 },
                 "slice": {
                     "rows": [{
-                        "uniqueName": "product_category"
+                        "uniqueName": "user"
                     }],
                     "columns": [{
-                        "uniqueName": "[Measures]"
+                        "uniqueName": "bio"
                     }],
-                    "measures": [{
-                        "uniqueName": "Price",
-                        "formula": "sum(\"shipping_cost\") + sum(\"unit_price\")",
-                        "caption": "Price"
-                    }]
+                    "columns": [{
+                        "uniqueName": "profile_picture"
+                    }],
+
                 },
                 "options": {
                     "viewType": "charts",
