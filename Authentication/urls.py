@@ -13,7 +13,7 @@ urlpatterns = [
     path('signout',views.signout,name = "signout"),
     path('aboutus',views.aboutus,name = "aboutus"),
     path('contactus',views.contactus,name = "contactus"),
-    path('join',views.join,name = "join")
-
+    path('join',views.join,name = "join"),
+    path('help',views.help,name = "help")
 
 ]

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClubHub Help</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #06a049;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+         h2, h3, h4 {
+            color: #06a049;
+        }
+
+        h1{
+           color :black;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        .faq-item {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 15px;
+            background-color: #fff;
+        }
+
+        ol, ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        footer {
+            background-color: #06a049;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+        section {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            text-align: left; /* Align the form elements to the left */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>TELL US YOUR QUERRIES</h1>
+    </header>
+
+    <main>
+        <center>
+            <h2>How Can We Help You?</h2>
+        </center>
+       
+        <section>
+            <h3>Ask a Question</h3>
+            <p>Have a question that's not answered here? Feel free to ask us, and we'll get back to you as soon as possible.</p>
+
+            <!-- Form for asking a question -->
+            <form action="submit_question.php" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="question">Your Question:</label>
+                <textarea id="question" name="question" rows="4" required></textarea>
+
+                <button type="submit">Submit Question</button>
+            </form>
+        </section>
+                        
+
+        
+        <section>
+            <h2>Frequently Asked Questions (FAQs)</h2>
+        
+            <div class="faq-item">
+                <h4>1. How do I create an event?</h4>
+                <p>To create an event on ClubHub, follow these steps:
+                    <ol>
+                        <li>Log in to your account.</li>
+                        <li>Go to the Events section.</li>
+                        <li>Click on the "Create Event" button.</li>
+                        <li>Fill in the event details and click "Submit."</li>
+                    </ol>
+                </p>
+            </div>
+        
+            <div class="faq-item">
+                <h4>2. Can I invite non-members to events?</h4>
+                <p>Yes, you can invite non-members to events. During the event creation process, you can specify whether the event is open to non-members.</p>
+            </div>
+        
+            <div class="faq-item">
+                <h4>3. How do I manage club members?</h4>
+                <p>To manage club members:
+                    <ol>
+                        <li>Go to the Members section.</li>
+                        <li>Use the search and filter options to find specific members.</li>
+                        <li>Edit or remove members as needed.</li>
+                    </ol>
+                </p>
+            </div>
+        
+            <!-- Add more FAQ items as needed -->
+        
+        </section>
+
+
+
+
+           

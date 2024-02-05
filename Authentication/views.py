@@ -143,3 +143,8 @@ def join(request):
   
   return render(request,"Authentication/join.html") 
 
+
+
+def help(request):
+  
+  return render(request,"Authentication/help.html") 
