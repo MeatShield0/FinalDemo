@@ -74,43 +74,43 @@ $.ajax({
                             "uniqueName": "description"
                         },
                         {
-                            "uniqueName": "[]"
-                        }
-                    ],
-                    "measures": [{
-                            "uniqueName": "shipping_cost",
-                            "aggregation": "sum"
-                        },
-                        {
-                            "uniqueName": "unit_price",
-                            "aggregation": "sum"
-                        }
-                    ]
-                }
-            }
-        });
-                "slice": {
-                    "rows": [{
-                        "uniqueName": "product_category"
-                    }],
-                    "columns": [{
-                            "uniqueName": "payment_method"
-                        },
-                        {
                             "uniqueName": "[Measures]"
                         }
                     ],
-                    "measures": [{
-                            "uniqueName": "shipping_cost",
-                            "aggregation": "sum"
-                        },
-                        {
-                            "uniqueName": "unit_price",
-                            "aggregation": "sum"
-                        }
-                    ]
+                    {#"measures": [{#}
+                    {#        "uniqueName": "shipping_cost",#}
+                    {#        "aggregation": "sum"#}
+                    {#    },#}
+                    {#    {#}
+                    {#        "uniqueName": "unit_price",#}
+                    {#        "aggregation": "sum"#}
+                    {#    }#}
+                    {#]#}
                 }
             }
+        });
+        {#        "slice": {#}
+        {#            "rows": [{#}
+        {#                "uniqueName": "product_category"#}
+        {#            }],#}
+        {#            "columns": [{#}
+        {#                    "uniqueName": "payment_method"#}
+        {#                },#}
+        {#                {#}
+        {#                    "uniqueName": "[Measures]"#}
+        {#                }#}
+        {#            ],#}
+        {#            "measures": [{#}
+        {#                    "uniqueName": "shipping_cost",#}
+        {#                    "aggregation": "sum"#}
+        {#                },#}
+        {#                {#}
+        {#                    "uniqueName": "unit_price",#}
+        {#                    "aggregation": "sum"#}
+        {#                }#}
+        {#            ]#}
+        {#        }#}
+        {#    }#}
         {#});#}
         new Flexmonster({
             container: "#pivot-chart-container",
