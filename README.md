@@ -23,8 +23,11 @@ Welcome to the Club Management App! This application is designed to help clubs e
    ```bash
    git clone https://github.com/your-username/club-management-app.git
    
-GROUP MEMBERS:
+**GROUP MEMBERS:**
 
-1) Leran Anthony Carvalho (23122021)
-2) Parul Sharma (23122026)
-3) Sukanna Das (23122039)
+**1) Leran Anthony Carvalho (23122021)**
+**Email: leran.carvalho@msds.christuniversity.in**
+**2) Parul Sharma (23122026)**
+**Email: parul.sharma@msds.christuniversity.in**
+**3) Sukanna Das (23122039)**
+**Email: sukanna.das@msds.christuniversity.in**
