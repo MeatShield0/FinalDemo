@@ -8,7 +8,7 @@
     
     <meta charset="UTF-8">
     
-    <title>Welcome to GeeksforGeeks LPU Chapter</title>
+    <title>CLUBNEXUS</title>
     
     <link rel="stylesheet" href="{% static 'style/style.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,12 +44,7 @@
 
 
     {% if user.is_authenticated %}
-
-    <h3>Hello {{fname}}!</h3>
-    <h4>You're successfully logged in.</h4>
-    
-
-    <section class="header">
+<section class="header">
         <div class="container">
         <div class="navbar">
             <div class="logo">
@@ -63,47 +58,79 @@
                     <li><a href="/contactus">Contact</a></li>
                     <li><a href="{% url 'dashboard_with_pivot' %}">DASHBOARD</a></li>
                     <li><a href="/join">Join</a></li>
+                    <li><a href="/signout">SignOut</a></li>
                 </ul>
             </nav>
         </div> 
 <!--------------------------------Home-------------------------------------------->
 <div class="row">
     <div class="col-2-txt">
-
-        <header class="hero">
-           
-            <h1>Welcome to Our Club</h1>
-            <p>Join us for exciting events and activities!</p>
-        </header>
-
-
-        <br>
-        <br>
         
+            <h6>Welcome to ClubHub</h6>
+            <p>Join us for exciting events and activities!</p>
+            <p>Scroll Down</p>
+            <br>
+            <br>
+            <br>
+       
+    </div>
+    <div class="ribbon">
+            <h1><marquee>UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..UPCOMING EVENTS..</marquee></h1>
+    </div>
 
-        <h1>~ElevateElite Athletics~</h1>
-        <p class="context">Welcome to ElevateElite Athletics Club, your home for sports excellence! Established in 1989, we're a vibrant community dedicated to fostering athletic achievement and camaraderie. With a rich history and state-of-the-art facilities, we offer a diverse range of sports, including [List of Sports. Join us to experience the thrill of competition, teamwork, and the joy of being part of a winning legacy. Unleash your potential with ElevateElite Athletics Club, where champions are made! </p>
+    <div class="row">
+        <div class="col-2-txt">
+            <h1>All-go-Rhythm 2024<h1>
+            <p class="context">🎉🎊 Greetings of the Day! 
+
+                Get ready for the most spectacular event of the year - All-Go-Rhythm! 🎶🕺💃 Organised by the Department Of Data Science in association with DSA.
+                
+                📅 Date: 2nd February, 2024
+                📍Venue: Open Stage, Central Block
+                🕧Time: 6:00 PM to 8:00 PM
+                
+                🌟 Immerse yourself in a day filled with cultural performances that'll leave you awestruck! 🎭🎤
+                
+                🎪 Explore the fun stalls that promise laughter, games, and surprises at every turn! 🤹‍♀🎯
+                
+                🍔🌮 Don't forget to treat your taste buds at the delicious food stalls serving a variety of mouthwatering delights! 🍕🍧
+                
+                Spread the word, bring your energy, and let's make All-Go-Rhythm an unforgettable blast! 🚀🥳
+                
+                See you all there! 🎈</i></b></p>
+        </div>
+        <div class="col-2-img">
+            <img src="{% static 'image/DANCE CLUB.jpg' %}" width="400px" id="pic">
+        </div>
     </div>
-    <div class="col-2-img">
-        <img src="{% static 'image/sports club img.png' %}" width="300px" id="pic">
-    </div>
-</div>
+
 <div class="row">
     <div class="col-3-img">
-        <img src="{% static 'image/music club.png' %}" width="400px" id="pic">
+        <img src="{% static 'image/music club.jpg' %}" width="400px" id="pic">
     </div>
     <div class="col-3-txt">
-        <h1>~HARMONY HUB ~<h1>
-        <p class="context">Welcome to HarmonyHub Collective, where music enthusiasts unite! Established to celebrate diverse melodies, we're a vibrant community fostering creativity and musical passion. Join us for a symphony of shared experiences, events, and the joy of making music together. Elevate your musical journey with HarmonyHub where every note resonates.</p>
+        <h1>World Cancer Awareness Day<h1>
+        <p class="context">Hello Christites! 🌟 Join us on 5th February 2024 for a Cancer Awareness Talk by Darryl D’Souza on the occassion of World Cancer Awareness Day. Let's unite for knowledge and support! 🎗  On 6th February 2024, visit our Awareness Stall for insights into a healthy lifestyle. Discover nutritious choices for a happier, healthier you! 🥗  Simultaneously, experience the fusion of taste and health at Forest Fusion Tea Stall. Indulge in exotic green teas promoting wellness. 🍵 Join us on this journey to embrace a vibrant and healthy life!</p>
     </div>
 </div>
 <div class="row">
     <div class="col-2-txt">
-        <h1>~BeatVibe ~<h1>
-        <p class="context">Welcome to BeatVibe Club, where rhythm and passion collide! Immerse yourself in the dance experience with us. Our vibrant community celebrates diverse dance styles, fostering creativity and connection. Join the BeatVibe family for energetic events, thrilling performances, and the joy of moving to the beat. Let's dance together!</i></b></p>
+        <h1>Alumni Meet<h1>
+        <p class="context">Greetings from the Student Welfare Office! 
+
+            We are excited to invite you to the Cultural Night at the upcoming Alumni Meet! 🌟 
+            
+            It promises to be an evening filled with nostalgia, laughter, and the joy of reconnecting💃
+            
+            Date: 27 January 2024
+            Time: 4:30 PM onwards 
+            Venue: Open Stage, Central Block 
+            
+             Join us for an unforgettable night celebrating nostalgia. We look forward to seeing you there!✨
+            </i></b></p>
     </div>
     <div class="col-2-img">
-        <img src="{% static 'image/DANCE CLUB.png' %}" width="600px" id="pic">
+        <img src="{% static 'image/cult.jpg' %}" width="400px" id="pic">
     </div>
 </div>
 
@@ -113,10 +140,9 @@
         <div class="row">
             <div class="footer-col-1">
                 <h1 class="txt">Follow Us</h1>
-                    <a class="insta" href="https://www.instagram.com/geeksforgeekslpu/"><i class="fa fa-instagram fa-2x"></i></a>
-                    <a class="fb" href="https://www.facebook.com/GeeksforGeeksLPU"><i class="fa fa-facebook-square fa-2x"></i></a>
-                    <a class="link" href="https://www.linkedin.com/company/geeksforgeekslpu/mycompany/"><i class="fa fa-linkedin-square fa-2x"></i></a>
-                    <a class="twitter" href=""><i class="fa fa-twitter fa-2x"></i></a>
+                    <a class="insta" href="https://www.instagram.com"><i class="fa fa-instagram fa-2x"></i></a>
+                    <a class="fb" href="https://www.facebook.com"><i class="fa fa-facebook-square fa-2x"></i></a>
+                    <a class="link" href="https://www.linkedin.com"><i class="fa fa-linkedin-square fa-2x"></i></a>
             </div>
             <div class="footer-col-2">
                 <h1 class="txt">Contact Us</h1>
@@ -126,11 +152,10 @@
     </div>
     <div class="grey-bar"></div>
     <div class="rights">
-        <p>Copyright &copy; Clubhub. All Rights Reserved | Gmail: clubhub@gmail.com </p>
+        <p>Copyright &copy; ClubNexus. All Rights Reserved 2024 | Gmail: clubnexus@gmail.com </p>
     </div>
     <div class="grey-bar"></div>
 
-    <button type="submit"><a href="/signout">SignOut</a></button>
  
     <!-- ------------------------------------------------------------------------ -->
 
@@ -145,11 +170,12 @@
 
     <div class="logged-out">
         <div class="button-container">
-
-    <button type="submit"><a href="/signup">SignUp</a></button>
-    <br/>
-    <button type="submit"><a href="/signin">SignIn</a></button>
-    <br/> 
+    <h4>Welcome to CLUBNEXUS!!!!!!!</h4>
+    <H3>Unlock the doors to endless possibilities!</H3>
+        <button type="submit"><a href="/signup">Join the Fun!</a></button>
+        <br>
+        
+        <button type="submit"><a href="/signin">Already a Member? Sign In</a></button>
     </div>
 </div>
     {% endif %}
