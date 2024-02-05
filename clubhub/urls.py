@@ -5,10 +5,6 @@ from django.urls import path
 urlpatterns = [
 
     path('admin/', admin.site.urls),
-
     path('', include('Authentication.urls')),
-    
-    path('', include('ClubNexus.urls')),
-
-    
+    path('dashboard/', include('dashboard.urls')),
 ]
