@@ -24,7 +24,16 @@
                 <div class="logo">
                     <img src="{% static 'image/logo.png' %}" alt="" width="75px" height="75px">
                 </div>
-               
+                <nav>
+                    <ul>
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        
+                        <li><a href="{% url 'aboutus' %}">About</a></li>
+                        <li><a href="{% url 'contactus' %}">Contact</a></li>
+                        <li><a href="{% url 'dashboard_with_pivot' %}">DASHBOARD</a></li>
+                        <li><a href="{% url 'join' %}">Join</a></li>
+                    </ul>
+                </nav
             </div>
     </header>
     <main>
