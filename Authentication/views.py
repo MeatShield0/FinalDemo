@@ -148,3 +148,9 @@ def join(request):
 def help(request):
   
   return render(request,"Authentication/help.html") 
+
+
+
+def thankyou(request):
+  
+  return render(request,"Authentication/thankyou.html") 

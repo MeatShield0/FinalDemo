@@ -14,6 +14,7 @@ urlpatterns = [
     path('aboutus',views.aboutus,name = "aboutus"),
     path('contactus',views.contactus,name = "contactus"),
     path('join',views.join,name = "join"),
-    path('help',views.help,name = "help")
+    path('help',views.help,name = "help"),
+    path('thankyou',views.thankyou,name = "thankyou")
 
 ]
