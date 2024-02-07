@@ -1,0 +1,91 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Management Dashboard</title>
+    <!-- Link to Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Link to your custom styles -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Club Management Dashboard</h1>
+    </div>
+
+    <div class="card-container">
+        <!-- Card 1: Total Members -->
+        <div class="card">
+            <div class="card-header">
+                <h2>Total Members</h2>
+            </div>
+            <div class="card-body">
+                <h3 id="totalMembers">500</h3>
+            </div>
+        </div>
+
+        <!-- Card 2: New Members Growth -->
+        <div class="card">
+            <div class="card-header">
+                <h2>New Members Growth</h2>
+            </div>
+            <div class="card-body chart-container">
+                <canvas id="newMembersGrowthChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Card 3: Age Distribution -->
+        <div class="card">
+            <div class="card-header">
+                <h2>Age Distribution</h2>
+            </div>
+            <div class="card-body chart-container">
+                <canvas id="ageDistributionChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Card 4: Gender Distribution -->
+        <div class="card">
+            <div class="card-header">
+                <h2>Gender Distribution</h2>
+            </div>
+            <div class="card-body chart-container">
+                <canvas id="genderDistributionChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Card 5: Event Attendance -->
+        <div class="card">
+            <div class="card-header">
+                <h2>Event Attendance</h2>
+            </div>
+            <div class="card-body chart-container">
+                <canvas id="eventAttendanceChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Card 6: Member Skills -->
+        <div class="card">
+            <div class="card-header">
+                <h2>Member Skills</h2>
+            </div>
+            <div class="card-body chart-container">
+                <canvas id="memberSkillsChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <button onclick="simulateEvent()">Simulate Event</button>
+    </div>
+</div>
+
+<!-- Include your custom JavaScript file -->
+<script src="{% static 'js/scripts.js' %}"></script>
+</body>
+</html>

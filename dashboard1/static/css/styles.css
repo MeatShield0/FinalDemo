@@ -1,0 +1,87 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #84fab0, #8fd3f4);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.header {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px; /* Added margin to separate header from cards */
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row; /* Updated to arrange cards horizontally */
+    gap: 20px; /* Added gap between cards */
+    justify-content: space-around; /* Center cards horizontally */
+    flex-wrap: wrap; /* Allow cards to wrap to the next row if needed */
+}
+
+.card {
+    flex: 0 1 calc(30% - 20px); /* Adjusted flex property */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px; /* Added margin at the bottom of each card */
+}
+
+.card-header {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px 8px 0 0;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.chart-container {
+    margin-top: 20px;
+}
+
+.chart-card {
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px; /* Added margin at the bottom of each chart card */
+}
+
+#newMembersGrowthChart, #ageDistributionChart, #genderDistributionChart, #eventAttendanceChart, #memberSkillsChart {
+    max-width: 100%;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-container button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.button-container button:hover {
+    background-color: #c82333;
+}
+
